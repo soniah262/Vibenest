@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - VibeNest</title>
+    <link rel="stylesheet" href="HOME.CSS">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="HOME.HTML">Home</a></li>
+            <li><a href="EVENTS.HTML">Events</a></li>
+            <li><a href="GALLERY.HTML">Gallery</a></li>
+            <li><a href="REGISTRATION.HTML">Registration</a></li>
+            <li><a href="CONTACT.HTML">Contact Us</a></li>
+            <li><a href="LOGIN.HTML">Login</a></li>
+            <li><a href="userprofile.html">User Profile</a></li>
+            <li><a href="signup.html">Sign up</a></li>
+        </ul>
+    </nav>
+    
+    <header>
+        <h1>Welcome, <span id="displayName"></span>!</h1>
+    </header>
+    
+    <main>
+        <div class="container">
+            <div class="profile-card">
+                
+                <form action="update_profile.php" method="post" enctype="multipart/form-data" id="profile-form">
+                    
+                    <div class="profile-pic">
+                        <!-- File Input for Profile Image -->
+                        <input type="file" id="uploadImage" accept="image/*">
+                        <!-- Updated Button: type="button" to prevent form submission -->
+                        <button type="button" onclick="uploadProfilePic()">Upload</button>
+                        <div class="profile-image-container">
+                            <img id="profileImage" src="" alt="Profile Picture" style="width: 100px; height: 100px;"/>
+                        </div>
+                    </div>
+                    
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <span class="error-message"></span>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required > <!-- Email is read-only -->
+                    
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    <span class="error-message"></span>
+
+                    <button type="submit">Update Profile</button>
+                    <button type="button" onclick="logout()">Logout</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 VibeNest Event Planning & Meetups. All rights reserved.</p>
+    </footer>
+
+    <!-- Link to JavaScript -->
+    <script src="profile.js" defer ></script>
+</body>
+</html>

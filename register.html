@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registration - VibeNest</title>
+    <link rel="stylesheet" href="HOME.CSS">
+</head>
+<body>
+    <header>
+        <!-- <nav>
+            <ul>
+                <li><a href="HOME.HTML">Home</a></li>
+                <li><a href="EVENTS.HTML">Events</a></li>
+                <li><a href="GALLERY.HTML">Gallery</a></li>
+                <li><a href="REGISTRATION.HTML">Registration</a></li>
+                <li><a href="CONTACT.HTML">Contact Us</a></li>
+                <li><a href="LOGIN.HTML">Login</a></li>
+                <li><a href="userprofile.html">User Profile</a></li>
+                <li><a href="signup.html">Sign up</a></li>
+            </ul>
+        </nav> -->
+    </header>
+
+    <main>
+        <section class="registration-header">
+            <h1>Register for an Event</h1>
+            <img src="https://media.istockphoto.com/id/1382273059/photo/authorised-managers-wearing-a-badge-and-checking-in-attendants-at-the-conference-entrance.jpg?s=612x612&w=0&k=20&c=ImwPTjsFjoS3kt2GK-X9_OUoJofOswUolvDiXuMcyqQ=" alt="Event registration desk" class="banner-image">
+            <p>Once you register, you officially become a member. Registration is QUICK, EASY and SIMPLE. REGISTER WITH US TODAY TO SAVE A SPOT! Fill in your details then proceed to payment. You can also visit our offices for more detailed registration.</p>
+        </section>
+            
+        <section class="registration-form">
+            <form action="signup.php" method="post">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Password:</label>
+                    <input type="password" id="password" name="password">
+                </div>
+
+                <div class="form-group">
+                    <label for="event">Select Event:</label>
+                    <select id="event" name="event" required>
+                        <option value="">-- Please select an event --</option>
+                        <option value="innovation_hub">Innovation Hub (Feb 14, 2025)</option>
+                        <option value="network_nexus">Network Nexus (Mar 10, 2025)</option>
+                        <option value="welcome_party">Welcome Party (Mar 12, 2025)</option>
+                        <option value="farewell_party">Farewell Party (Jul 19, 2025)</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="attendees">Number of Attendees:</label>
+                    <input type="number" id="attendees" name="attendees" min="1" value="1">
+                </div>
+                
+                <div class="form-group checkbox-group">
+                    <label class="checkbox-label">
+                        
+                         I agree to the terms and conditions
+                    </label>
+                </div>
+                
+                <div class="form-group checkbox-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        Subscribe to our newsletter for future events
+                    </label>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="submit" class="btn-primary">Register Now</button>
+                    <button type="reset" class="btn-secondary">Reset Form</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 VibeNest Event Planning & Meetups. All rights reserved.</p>
+    </footer>
+</body>
+</html>

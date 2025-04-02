@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign Up - VibeNest</title>
+    <link rel="stylesheet" href="HOME.CSS">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="HOME.HTML">Home</a></li>
+            <li><a href="EVENTS.HTML">Events</a></li>
+            <li><a href="GALLERY.HTML">Gallery</a></li>
+            <li><a href="REGISTRATION.HTML">Registration</a></li>
+            <li><a href="CONTACT.HTML">Contact Us</a></li>
+            <li><a href="LOGIN.HTML">Login</a></li>
+            <li><a href="userprofile.html">User Profile</a></li>
+            <li><a href="signup.html">Sign up</a></li>
+        </ul>
+    </nav>
+    
+    <header>
+        <h1>Create an Account</h1>
+    </header>
+    
+    <main>
+        <div class="container">
+            <form action="signup_process.php" method="post" class="signup-form" id="signup-form">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" class="validate" required>
+                <span class="error-message"></span>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" class="validate" required>
+                <span class="error-message"></span>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" class="validate" required>
+                <span class="error-message"></span>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" class="validate" required>
+                <span class="error-message"></span>
+
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm_password" class="validate" required>
+                <span class="error-message"></span>
+
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 VibeNest Event Planning & Meetups. All rights reserved.</p>
+    </footer>
+
+    <!-- Link JavaScript -->
+    <script src="signup.js"></script>
+</body>
+</html>
